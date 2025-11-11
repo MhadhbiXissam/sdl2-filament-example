@@ -1,0 +1,8 @@
+# Ignore Filament archive and extracted folder (version-independent)
+filament-*-linux.tgz
+filament-*-linux/
+filament/
+
+# Optional: ignore build output
+*.o
+*.out
