@@ -1,0 +1,250 @@
+filament
+├── bin
+│   ├── assets
+│   │   ├── fonts
+│   │   │   ├── Roboto-License.txt
+│   │   │   └── Roboto-Medium.ttf
+│   │   └── ibl
+│   │       └── lightroom_14b
+│   │           ├── lightroom_14b_ibl.ktx
+│   │           ├── lightroom_14b_skybox.ktx
+│   │           └── sh.txt
+│   ├── basisu
+│   ├── cmgen
+│   ├── filamesh
+│   ├── glslminifier
+│   ├── gltf_viewer
+│   ├── matc
+│   ├── matedit
+│   ├── material_sandbox
+│   ├── matinfo
+│   ├── mipgen
+│   ├── normal-blending
+│   ├── resgen
+│   ├── roughness-prefilter
+│   ├── specular-color
+│   └── uberz
+├── docs
+│   ├── filamesh.md
+│   ├── matinfo.md
+│   ├── mipgen.md
+│   ├── normal-blending.md
+│   ├── roughness-prefilter.md
+│   └── specular-color.md
+├── include
+│   ├── backend
+│   │   ├── AcquiredImage.h
+│   │   ├── BufferDescriptor.h
+│   │   ├── CallbackHandler.h
+│   │   ├── DriverApiForward.h
+│   │   ├── DriverEnums.h
+│   │   ├── Handle.h
+│   │   ├── PipelineState.h
+│   │   ├── PixelBufferDescriptor.h
+│   │   ├── Platform.h
+│   │   ├── platforms
+│   │   │   ├── OpenGLPlatform.h
+│   │   │   ├── PlatformCocoaGL.h
+│   │   │   ├── PlatformCocoaTouchGL.h
+│   │   │   ├── PlatformEGLAndroid.h
+│   │   │   ├── PlatformEGL.h
+│   │   │   ├── PlatformEGLHeadless.h
+│   │   │   ├── PlatformGLX.h
+│   │   │   ├── PlatformWebGL.h
+│   │   │   ├── PlatformWGL.h
+│   │   │   └── VulkanPlatform.h
+│   │   ├── PresentCallable.h
+│   │   ├── Program.h
+│   │   ├── README.md
+│   │   ├── SamplerDescriptor.h
+│   │   └── TargetBufferInfo.h
+│   ├── camutils
+│   │   ├── Bookmark.h
+│   │   ├── compiler.h
+│   │   └── Manipulator.h
+│   ├── filamat
+│   │   ├── Enums.h
+│   │   ├── IncludeCallback.h
+│   │   ├── MaterialBuilder.h
+│   │   └── Package.h
+│   ├── filament
+│   │   ├── Box.h
+│   │   ├── BufferObject.h
+│   │   ├── Camera.h
+│   │   ├── ColorGrading.h
+│   │   ├── Color.h
+│   │   ├── ColorSpace.h
+│   │   ├── DebugRegistry.h
+│   │   ├── Engine.h
+│   │   ├── Exposure.h
+│   │   ├── Fence.h
+│   │   ├── FilamentAPI.h
+│   │   ├── Frustum.h
+│   │   ├── IndexBuffer.h
+│   │   ├── IndirectLight.h
+│   │   ├── InstanceBuffer.h
+│   │   ├── LightManager.h
+│   │   ├── MaterialChunkType.h
+│   │   ├── MaterialEnums.h
+│   │   ├── Material.h
+│   │   ├── MaterialInstance.h
+│   │   ├── MorphTargetBuffer.h
+│   │   ├── Options.h
+│   │   ├── RenderableManager.h
+│   │   ├── Renderer.h
+│   │   ├── RenderTarget.h
+│   │   ├── Scene.h
+│   │   ├── SkinningBuffer.h
+│   │   ├── Skybox.h
+│   │   ├── Stream.h
+│   │   ├── SwapChain.h
+│   │   ├── Texture.h
+│   │   ├── TextureSampler.h
+│   │   ├── ToneMapper.h
+│   │   ├── TransformManager.h
+│   │   ├── VertexBuffer.h
+│   │   ├── View.h
+│   │   └── Viewport.h
+│   ├── filament-iblprefilter
+│   │   └── IBLPrefilterContext.h
+│   ├── filameshio
+│   │   └── MeshReader.h
+│   ├── geometry
+│   │   ├── SurfaceOrientation.h
+│   │   ├── TangentSpaceMesh.h
+│   │   └── Transcoder.h
+│   ├── gltfio
+│   │   ├── Animator.h
+│   │   ├── AssetLoader.h
+│   │   ├── FilamentAsset.h
+│   │   ├── FilamentInstance.h
+│   │   ├── MaterialProvider.h
+│   │   ├── materials
+│   │   │   └── uberarchive.h
+│   │   ├── math.h
+│   │   ├── NodeManager.h
+│   │   ├── ResourceLoader.h
+│   │   ├── TextureProvider.h
+│   │   └── TrsTransformManager.h
+│   ├── ibl
+│   │   ├── Cubemap.h
+│   │   ├── CubemapIBL.h
+│   │   ├── CubemapSH.h
+│   │   ├── CubemapUtils.h
+│   │   ├── Image.h
+│   │   └── utilities.h
+│   ├── image
+│   │   ├── ColorTransform.h
+│   │   ├── ImageOps.h
+│   │   ├── ImageSampler.h
+│   │   ├── Ktx1Bundle.h
+│   │   └── LinearImage.h
+│   ├── ktxreader
+│   │   ├── Ktx1Reader.h
+│   │   └── Ktx2Reader.h
+│   ├── math
+│   │   ├── compiler.h
+│   │   ├── fast.h
+│   │   ├── half.h
+│   │   ├── mat2.h
+│   │   ├── mat3.h
+│   │   ├── mat4.h
+│   │   ├── mathfwd.h
+│   │   ├── norm.h
+│   │   ├── quat.h
+│   │   ├── scalar.h
+│   │   ├── TMatHelpers.h
+│   │   ├── TQuatHelpers.h
+│   │   ├── TVecHelpers.h
+│   │   ├── vec2.h
+│   │   ├── vec3.h
+│   │   └── vec4.h
+│   ├── mathio
+│   │   └── ostream.h
+│   ├── mikktspace
+│   │   └── mikktspace.h
+│   ├── tsl
+│   │   ├── robin_growth_policy.h
+│   │   ├── robin_hash.h
+│   │   ├── robin_map.h
+│   │   └── robin_set.h
+│   ├── uberz
+│   │   ├── ArchiveEnums.h
+│   │   ├── ReadableArchive.h
+│   │   └── WritableArchive.h
+│   ├── utils
+│   │   ├── algorithm.h
+│   │   ├── Allocator.h
+│   │   ├── BitmaskEnum.h
+│   │   ├── bitset.h
+│   │   ├── CallStack.h
+│   │   ├── compiler.h
+│   │   ├── compressed_pair.h
+│   │   ├── CString.h
+│   │   ├── debug.h
+│   │   ├── Entity.h
+│   │   ├── EntityInstance.h
+│   │   ├── EntityManager.h
+│   │   ├── FixedCapacityVector.h
+│   │   ├── generic
+│   │   │   └── Mutex.h
+│   │   ├── Invocable.h
+│   │   ├── Log.h
+│   │   ├── memalign.h
+│   │   ├── Mutex.h
+│   │   ├── NameComponentManager.h
+│   │   ├── ostream.h
+│   │   ├── Panic.h
+│   │   ├── Path.h
+│   │   ├── PrivateImplementation.h
+│   │   ├── PrivateImplementation-impl.h
+│   │   ├── SingleInstanceComponentManager.h
+│   │   ├── Slice.h
+│   │   ├── sstream.h
+│   │   ├── StructureOfArrays.h
+│   │   ├── Systrace.h
+│   │   └── unwindows.h
+│   └── viewer
+│       ├── AutomationEngine.h
+│       ├── AutomationSpec.h
+│       ├── RemoteServer.h
+│       ├── Settings.h
+│       └── ViewerGui.h
+├── lib
+│   └── x86_64
+│       ├── libbackend.a
+│       ├── libbasis_transcoder.a
+│       ├── libbluegl.a
+│       ├── libbluevk.a
+│       ├── libcamutils.a
+│       ├── libcivetweb.a
+│       ├── libdracodec.a
+│       ├── libfilabridge.a
+│       ├── libfilaflat.a
+│       ├── libfilamat.a
+│       ├── libfilament.a
+│       ├── libfilament-iblprefilter.a
+│       ├── libfilameshio.a
+│       ├── libgeometry.a
+│       ├── libgltfio.a
+│       ├── libgltfio_core.a
+│       ├── libibl.a
+│       ├── libibl-lite.a
+│       ├── libimage.a
+│       ├── libktxreader.a
+│       ├── libmatdbg.a
+│       ├── libmeshoptimizer.a
+│       ├── libmikktspace.a
+│       ├── libshaders.a
+│       ├── libsmol-v.a
+│       ├── libstb.a
+│       ├── libuberarchive.a
+│       ├── libuberzlib.a
+│       ├── libutils.a
+│       ├── libviewer.a
+│       ├── libvkshaders.a
+│       └── libzstd.a
+├── LICENSE
+└── README.md
+
+30 directories, 217 files
